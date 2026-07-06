@@ -1,0 +1,82 @@
+{
+  "name": "ai-memory-lite",
+  "displayName": "AI Memory Lite",
+  "description": "Local-first handoff memory for Claude Code, Claude chat, ChatGPT, and Codex sessions in VS Code.",
+  "version": "0.8.0",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/William-Sommers/Memoconst.git",
+    "directory": "ai-memory-lite"
+  },
+  "bugs": {
+    "url": "https://github.com/William-Sommers/Memoconst/issues"
+  },
+  "homepage": "https://github.com/William-Sommers/Memoconst#readme",
+  "keywords": [
+    "ai-memory",
+    "agent-handoff",
+    "claude-code",
+    "codex",
+    "chatgpt",
+    "vscode"
+  ],
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiMemoryLite.runEverything",
+        "title": "AI Memory Lite: Sync + Update OVERVIEW.md"
+      },
+      {
+        "command": "aiMemoryLite.continueSession",
+        "title": "AI Memory Lite: Continue a Saved Session"
+      },
+      {
+        "command": "aiMemoryLite.syncNow",
+        "title": "AI Memory Lite: Sync Local History"
+      },
+      {
+        "command": "aiMemoryLite.generateContext",
+        "title": "AI Memory Lite: Update OVERVIEW.md"
+      },
+      {
+        "command": "aiMemoryLite.openContext",
+        "title": "AI Memory Lite: Open OVERVIEW.md"
+      },
+      {
+        "command": "aiMemoryLite.importClipboard",
+        "title": "AI Memory Lite: Import Clipboard as ChatGPT Transcript"
+      },
+      {
+        "command": "aiMemoryLite.importClaudeClipboard",
+        "title": "AI Memory Lite: Import Clipboard as Claude Chat Transcript"
+      },
+      {
+        "command": "aiMemoryLite.importTranscriptFile",
+        "title": "AI Memory Lite: Import Transcript File"
+      }
+    ],
+    "configuration": {
+      "title": "AI Memory Lite",
+      "properties": {
+        "aiMemoryLite.maxFilesPerSource": {
+          "type": "number",
+          "default": 200,
+          "description": "Maximum number of recent JSONL files scanned per source."
+        },
+        "aiMemoryLite.maxContextItems": {
+          "type": "number",
+          "default": 60,
+          "description": "Maximum normalized messages included in AI_CONTEXT.md."
+        }
+      }
+    }
+  }
+}

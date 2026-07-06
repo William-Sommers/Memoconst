@@ -1,0 +1,10 @@
+.ai-memory/
+*.zip
+*.vsix
+node_modules/
+.vscode/
+*.log
+
+# AI Memory Lite: keep raw transcripts local by default
+.ai-memory/raw/
+.ai-memory/imports/
