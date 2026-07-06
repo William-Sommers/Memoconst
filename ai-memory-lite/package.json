@@ -2,9 +2,10 @@
   "name": "ai-memory-lite",
   "displayName": "AI Memory Lite",
   "description": "Local-first handoff memory for Claude Code, Claude chat, ChatGPT, and Codex sessions in VS Code.",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "publisher": "william-sommers",
   "license": "MIT",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/William-Sommers/Memoconst.git",
