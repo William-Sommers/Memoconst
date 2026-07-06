@@ -2,7 +2,7 @@
   "name": "ai-memory-lite",
   "displayName": "AI Memory Lite",
   "description": "Local-first handoff memory for Claude Code, Claude chat, ChatGPT, and Codex sessions in VS Code.",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "publisher": "local",
   "license": "MIT",
   "repository": {
@@ -70,11 +70,6 @@
           "type": "number",
           "default": 200,
           "description": "Maximum number of recent JSONL files scanned per source."
-        },
-        "aiMemoryLite.maxContextItems": {
-          "type": "number",
-          "default": 60,
-          "description": "Maximum normalized messages included in AI_CONTEXT.md."
         }
       }
     }
